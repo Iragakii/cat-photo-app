@@ -1,4 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>CatPhotoApp</title>
+  </head>
   <body>
     <main>
       <h1>CatPhotoApp</h1>
@@ -28,9 +34,31 @@
       </ol>
       <figure>
         <img src ='https://www.wikihow.com/images/thumb/f/fe/What_kind_of_cat_am_i.png/728px-What_kind_of_cat_am_i.png' alt="four cat looking around a field">
-        <figcaption>Cat hate other cats.</figcaption>
+        <figcaption>Cat <Strong>hate</Strong> other cats.</figcaption>
       </figure>
     </section>
+    <section>
+      <h2>Cat Form</h2>
+      <form action="https://freecatphotoapp.com/submit-cat-photo">
+        <fieldset>
+          <legend>Is your cat an indoor or outdoor cat ?</legend>
+        <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor</label>
+        <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+      </fieldset>
+      <fieldset>
+        <legend>What's your cat's personality ?</legend>
+        <input type="checkbox" id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+        <input type="checkbox" id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+        <input id="energetic" type="checkbox" name="personality"><label for="energetic" value="energetic">Energetic</label>
+      </fieldset>
+        <input type="text" name="catphotourl" placeholder="cat photo url" required>
+        <button type="submit">Submit</button>
+      </form>
+
+    </section>
 </main>
+<footer>
+  <p>No Copyright - <a href="https://github.com/Iragakii">iragaki.org</a></p>
+</footer>
 </body>
 </html>
